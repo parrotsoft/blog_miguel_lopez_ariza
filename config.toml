@@ -3,5 +3,28 @@ languageCode = "es-CO"
 title = "Miguel Lopez Ariza"
 theme = "bilberry-hugo-theme"
 
-author = "Miguel Lopez Ariza"
-description = "Blog sobre programacion en Laravel, Angular, Ionic y cualquier otra tecnologia que llegue a mi vida"
+enableRobotsTXT = true
+
+[params]
+   author = "Miguel Lopez Ariza"
+   description = "Blog dedicado a tocar temas relacionados con la programacion y mi labor diaria como trabajador, estudiante y profesor"
+  keywords = "blog,laravel,php,angular,ionic,developer,desarrollador,programador"
+
+   avatarEmail = "lopezarizamiguel@gmail.com"
+   subtitle = "Hola, te compartire un poco de mi experiencia como programador!"
+
+   showSocialMedia = true
+
+   socialMediaLinks = [
+      { link = "https://github.com/parrotsoft", icon = "fab fa-github" },
+      { link = "https://www.linkedin.com/in/mlopezariza", icon = "fab fa-linkedin-in" },
+      { link = "https://twitter.com/miguelopeza", icon = "fab fa-twitter" },
+      { link = "https://www.youtube.com/channel/UCoaqC95Z7XQBerrFTYf3Rbg", icon = "fab fa-youtube" }
+    ]
+
+       
+    copyrightBy = "by Miguel Lopez Ariza"
+    copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
+    copyrightUrl = "https://github.com/parrotsoft"
+    creditsText = "Miguel Lopez Ariza"
+    creditsUrl = "https://github.com/parrotsoft/blog_miguel_lopez_ariza"
