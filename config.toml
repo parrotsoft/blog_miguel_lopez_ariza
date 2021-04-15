@@ -1,17 +1,17 @@
 baseURL = "http://example.org/"
 languageCode = "es-CO"
-title = "Miguel Lopez Ariza"
+title = "Miguel López Ariza"
 theme = "bilberry-hugo-theme"
 
 enableRobotsTXT = true
 
 [params]
-   author = "Miguel Lopez Ariza"
-   description = "Blog dedicado a tocar temas relacionados con la programacion y mi labor diaria como trabajador, estudiante y profesor"
+   author = "Miguel López Ariza"
+   description = "Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor"
   keywords = "blog,laravel,php,angular,ionic,developer,desarrollador,programador"
 
    avatarEmail = "lopezarizamiguel@gmail.com"
-   subtitle = "Hola, te compartire un poco de mi experiencia como programador!"
+   subtitle = "Hola, te compartiré un poco de mi experiencia como programador!"
 
    showSocialMedia = true
 
