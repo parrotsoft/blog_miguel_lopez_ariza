@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "es-CO"
+title = "Miguel Lopez Ariza"
+theme = "bilberry-hugo-theme"
+
+author = "Miguel Lopez Ariza"
+description = "Blog sobre programacion en Laravel, Angular, Ionic y cualquier otra tecnologia que llegue a mi vida"
