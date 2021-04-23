@@ -1,4 +1,4 @@
-baseURL = "https://parrotsoft.github.io/blog_miguel_lopez_ariza/"
+baseURL = "https://blog.miguellopezariza.com/"
 languageCode = "es-CO"
 title = "Miguel López Ariza"
 theme = "bilberry-hugo-theme"
