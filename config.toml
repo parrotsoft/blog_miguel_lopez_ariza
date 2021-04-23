@@ -1,7 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://parrotsoft.github.io/blog_miguel_lopez_ariza/"
 languageCode = "es-CO"
 title = "Miguel López Ariza"
 theme = "bilberry-hugo-theme"
+publishDir = "docs"
 
 enableRobotsTXT = true
 
