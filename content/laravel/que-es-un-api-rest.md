@@ -1,7 +1,6 @@
 ---
 title: "Que Es Un Api Rest"
 date: 2021-03-22T20:46:57-05:00
-draft: false
 tags: ["api","api rest","metodos http", "código de estado", "http", "json"]
 ---
 

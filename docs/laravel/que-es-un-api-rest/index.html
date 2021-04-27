@@ -14,18 +14,19 @@
     <title>
         
            
-               Hola, te compartiré un poco de mi experiencia como programador! &vert; Miguel López Ariza
+               Que Es Un Api Rest &vert; Miguel López Ariza
            
         
     </title>
-    <meta name="description" content="Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
-    <meta itemprop="name" content="Hola, te compartiré un poco de mi experiencia como programador!">
-    <meta itemprop="description" content="Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
-    <meta property="og:title" content="Hola, te compartiré un poco de mi experiencia como programador!">
-    <meta property="og:description" content="Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
+    <meta name="description" content="Que Es Un Api Rest - Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
+    <meta itemprop="name" content="Que Es Un Api Rest">
+    <meta itemprop="description" content="Que Es Un Api Rest - Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
+    <meta property="og:title" content="Que Es Un Api Rest">
+    <meta property="og:description" content="Que Es Un Api Rest - Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
     <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-    <meta property="og:url" content="https://blog.miguellopezariza.com/">
-    <meta property="og:site_name" content="Miguel López Ariza"><meta property="og:type" content="website">
+    <meta property="og:url" content="https://blog.miguellopezariza.com/laravel/que-es-un-api-rest/">
+    <meta property="og:site_name" content="Miguel López Ariza">
+    <meta property="og:type" content="article">
 
     
 
@@ -33,12 +34,12 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/" rel="alternate" type="application/rss+xml" title="Miguel López Ariza" />
-    <link href="/" rel="feed" type="application/rss+xml" title="Miguel López Ariza" />
+    <link href="/laravel/que-es-un-api-rest/" rel="alternate" type="application/rss+xml" title="Miguel López Ariza" />
+    <link href="/laravel/que-es-un-api-rest/" rel="feed" type="application/rss+xml" title="Miguel López Ariza" />
     
 
     
-    <link rel="canonical" href="https://blog.miguellopezariza.com/">
+    <link rel="canonical" href="https://blog.miguellopezariza.com/laravel/que-es-un-api-rest/">
     
 
     <link rel="stylesheet" href="https://blog.miguellopezariza.com/theme.css">
@@ -105,25 +106,7 @@
 
     <div class="main container">
         
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-    
-        
-    <div class="article-wrapper u-cf">
+    <div class="article-wrapper u-cf single">
         
             <a class="bubble" href="https://blog.miguellopezariza.com/laravel/que-es-un-api-rest/">
     <i class="fas fa-fw fa-pencil-alt"></i>
@@ -154,15 +137,102 @@
     </div>
 
     
-        Un API o Interfaz de programación de aplicaciones, es un conjunto de definiciones y protocolos que nos permiten compartir información entre aplicaciones.
-Existen dos roles que intervienen en el concepto de API’S
-  Consumidos es quien solicita la información.
-  Proveedor que se encarga de proveer la información solicitada.
-  Ejemplo Consultar el nivel de tinta de nuestra impresora desde Windows, este último solicita la información del nivel de tinta a la impresora por lo tanto es el Consumidor.
+        
 
-        
-            <a href="https://blog.miguellopezariza.com/laravel/que-es-un-api-rest/" class="more">Continue reading</a>
-        
+        <p><img src="https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940," alt=" https://images.pexels.com" title="https://images.pexels.com"></p>
+<p>Un API o Interfaz de programación de aplicaciones, es un conjunto de definiciones y protocolos que nos permiten compartir información entre aplicaciones.</p>
+<p>Existen dos roles que intervienen en el concepto de <strong>API’S</strong></p>
+<ul>
+<li>
+<p><strong>Consumidos</strong> es quien solicita la información.</p>
+</li>
+<li>
+<p><strong>Proveedor</strong> que se encarga de proveer la información solicitada.</p>
+</li>
+</ul>
+<h4 id="ejemplo">Ejemplo</h4>
+<p>Consultar el nivel de tinta de nuestra impresora desde Windows, este último solicita la información del nivel de tinta a la impresora por lo tanto es el <strong>Consumidor</strong>.</p>
+<p>La impresora toma esta solicitud y retorna la información relacionada con el nivel de tinta por lo tanto tiene el rol de <strong>Proveedor</strong>.</p>
+<p>Esta interacción entre Windows y la impresora se realiza por medio de un <strong>API</strong>.</p>
+<h4 id="qué-es-rest">¿QUÉ ES REST?</h4>
+<p>REST o <strong>Trasferencia de Estado Representacional</strong>, es un conjunto de principios de arquitectura, definida por <strong>Roy Fielding</strong> en el año <strong>2000</strong>.</p>
+<p>Se basa en la no existencia de estado, es decir información como por ejemplo las credenciales o <strong>token</strong> de seguridad deben ser enviadas cada vez que se solicite un recurso para poder ser identificados y no son almacenadas en el servidor.</p>
+<h4 id="ejemplo-de-rest">Ejemplo de REST</h4>
+<p>Hacemos el llamado a un servicio que nos retorne el clima para un día determinado, para lo cual debemos enviar nuestras credenciales usuario y clave para obtener la información, en cada petición que realizásemos debemos enviar las credenciales, pues las mismas no quedan almacenadas en el servidor.</p>
+<h4 id="qué-es-api-rest">¿QUÉ ES API REST?</h4>
+<p>Es un conjunto de buenas prácticas utilizadas para el intercambio de información en aplicaciones utilizando el protocolo <strong>HTTP</strong> y <strong>JSON</strong> para el intercambio de información.</p>
+<p>Uno de los elementos mas importantes de las <strong>API REST</strong> son las <strong>URI</strong> (Identificador Único del Recurso), básicamente es una URL única que permita exponer un recurso.</p>
+<h5 id="ejemplo-1">Ejemplo:</h5>
+<ul>
+<li>http://&hellip;./tiendas</li>
+</ul>
+<h5 id="métodos-http">MÉTODOS HTTP</h5>
+<p>Para realizar operaciones sobre recursos contamos con los siguientes métodos:</p>
+<ul>
+<li>
+<p><strong>GET:</strong> Se utiliza para acceder a los distintos recursos</p>
+</li>
+<li>
+<p><strong>POST:</strong> Se utiliza para realizar acciones de creación de nuevos recursos.</p>
+</li>
+<li>
+<p><strong>PUT:</strong> Se utiliza para modificar los recursos existentes.</p>
+</li>
+<li>
+<p><strong>DELETE:</strong> se utiliza para eliminar los recursos.</p>
+</li>
+</ul>
+<h5 id="códigos-de-estado">CÓDIGOS DE ESTADO</h5>
+<p>Además de la URI’s y los métodos disponemos de códigos de estado, que nos permiten identificar cual es el resultado de una operación realizada sobre un recurso, los más utilizados son los siguientes:</p>
+<ul>
+<li>
+<p><strong>200 Ok:</strong> Respuesta estándar para peticiones correctas.</p>
+</li>
+<li>
+<p><strong>202 Create:</strong> La petición a sido completada y se a creado un nuevo recurso.</p>
+</li>
+<li>
+<p><strong>400 Bad Request:</strong> Petición errónea por parte del cliente.</p>
+</li>
+<li>
+<p><strong>401 Unauthorized:</strong> Error relacionado con la autenticación o credenciales de seguridad.</p>
+</li>
+<li>
+<p><strong>404 Not Found:</strong> Recurso no encontrado.</p>
+</li>
+<li>
+<p><strong>500 Internal Server Error:</strong> Error del lado del servidor.</p>
+</li>
+</ul>
+<p>En el siguiente video explico en detalle lo planteado en este post.</p>
+
+
+    
+    <div class="responsive-video youtube">
+        <iframe class="no-js-hidden" src="https://www.youtube-nocookie.com/embed/BfYFBCClxJc?rel=0" frameborder="0" allowfullscreen></iframe>
+
+        <div class="no-js-message">
+            The YouTube player can not be loaded with disabled JavaScript. <br>
+            The following video is embedded here: <br>
+
+            <a href="https://youtube.com/watch?v=BfYFBCClxJc" target="_blank">
+                https://youtube.com/watch?v=BfYFBCClxJc
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 </div>
 
@@ -217,17 +287,13 @@ Existen dos roles que intervienen en el concepto de API’S
         
     </div>
 
-
     
+        <div id="comments-container">
+            
+            
 
+        </div>
     
-    <div class="paginator">
-        
-
-        
-    </div>
-
-
 
     </div>
 
@@ -284,8 +350,7 @@ Existen dos roles que intervienen en el concepto de API’S
                 
                 by Miguel Lopez Ariza
             </a>
-            -
-            <a href="https://blog.miguellopezariza.com/index.xml">RSS</a>
+            
         </div>
         <div class="author">
             <a href="https://github.com/parrotsoft/blog_miguel_lopez_ariza"

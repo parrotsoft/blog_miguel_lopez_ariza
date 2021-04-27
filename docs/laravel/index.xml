@@ -1,15 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miguel López Ariza</title>
-    <link>https://blog.miguellopezariza.com/</link>
-    <description>Recent content on Miguel López Ariza</description>
+    <title>Laravels on Miguel López Ariza</title>
+    <link>https://blog.miguellopezariza.com/laravel/</link>
+    <description>Recent content in Laravels on Miguel López Ariza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-CO</language>
-    <lastBuildDate>Mon, 22 Mar 2021 20:46:57 -0500</lastBuildDate>
-    
-        <atom:link href="https://blog.miguellopezariza.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 22 Mar 2021 20:46:57 -0500</lastBuildDate><atom:link href="https://blog.miguellopezariza.com/laravel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Que Es Un Api Rest</title>
       <link>https://blog.miguellopezariza.com/laravel/que-es-un-api-rest/</link>
