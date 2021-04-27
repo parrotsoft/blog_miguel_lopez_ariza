@@ -1,11 +1,11 @@
 ---
 title: "Que Es Un Api Rest"
 date: 2021-03-22T20:46:57-05:00
-draft: true
+draft: false
 tags: ["api","api rest","metodos http", "código de estado", "http", "json"]
 ---
 
-![ https://images.pexels.com](https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![ https://images.pexels.com](https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940, "https://images.pexels.com")
 
 Un API o Interfaz de programación de aplicaciones, es un conjunto de definiciones y protocolos que nos permiten compartir información entre aplicaciones.  
 
