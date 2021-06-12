@@ -8,6 +8,7 @@ googleAnalytics = "G-K6K1XVE8DN"
 enableRobotsTXT = true
 
 [params]
+   googleAnalyticsID = "G-K6K1XVE8DN"
    author = "Miguel López Ariza"
    description = "Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor"
   keywords = "blog,laravel,php,angular,ionic,developer,desarrollador,programador"
