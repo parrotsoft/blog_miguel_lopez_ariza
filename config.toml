@@ -3,7 +3,6 @@ languageCode = "es-CO"
 title = "Miguel López Ariza"
 theme = "bilberry-hugo-theme"
 publishDir = "docs"
-googleAnalytics = "G-K6K1XVE8DN"
 
 enableRobotsTXT = true
 
