@@ -1,7 +1,6 @@
 ---
 title: "Instalar Neovim Y Plugins en Windows 10"
 date: 2021-06-12T15:17:59-05:00
-draft: true
 tags: ["neovim","vim","windows10"]
 ---
 

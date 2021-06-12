@@ -50,54 +50,6 @@
     <loc>https://blog.miguellopezariza.com/tags/ufw/</loc>
     <lastmod>2021-05-19T14:24:58-05:00</lastmod>
   </url><url>
-    <loc>https://blog.miguellopezariza.com/laravel/</loc>
-    <lastmod>2021-04-27T16:14:58-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/laravel/valida-los-request-de-tu-api-rest-en-laravel/</loc>
-    <lastmod>2021-04-27T16:14:58-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/laravel/agrega-autenticacion-a-tu-api-rest-en-laravel-con-passport/</loc>
-    <lastmod>2021-04-27T16:13:07-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/laravel/estandariza-las-respuestas-de-tu-api-rest-con-jsend-en-laravel/</loc>
-    <lastmod>2021-04-14T20:48:09-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/laravel/crea-tu-primer-api-rest-con-laravel-7.x/</loc>
-    <lastmod>2021-04-14T20:47:17-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/laragon/</loc>
-    <lastmod>2021-04-14T20:46:40-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/laragon/prinstala-phpmyadmin-en-laragon/</loc>
-    <lastmod>2021-04-14T20:46:40-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/categories/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/tags/desarrollo/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/tags/developer/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/tags/laragon/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/tags/laravel/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/categories/laravel/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/tags/php/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/laravel/prepara-tu-entorno-de-desarrollo-para-laravel-en-windows-10/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/tags/windows-10/</loc>
-    <lastmod>2021-04-14T20:45:23-05:00</lastmod>
-  </url><url>
     <loc>https://blog.miguellopezariza.com/tags/api/</loc>
     <lastmod>2021-03-22T20:46:57-05:00</lastmod>
   </url><url>
@@ -113,10 +65,15 @@
     <loc>https://blog.miguellopezariza.com/tags/json/</loc>
     <lastmod>2021-03-22T20:46:57-05:00</lastmod>
   </url><url>
+    <loc>https://blog.miguellopezariza.com/laravel/</loc>
+    <lastmod>2021-03-22T20:46:57-05:00</lastmod>
+  </url><url>
     <loc>https://blog.miguellopezariza.com/tags/metodos-http/</loc>
     <lastmod>2021-03-22T20:46:57-05:00</lastmod>
   </url><url>
     <loc>https://blog.miguellopezariza.com/laravel/que-es-un-api-rest/</loc>
     <lastmod>2021-03-22T20:46:57-05:00</lastmod>
+  </url><url>
+    <loc>https://blog.miguellopezariza.com/categories/</loc>
   </url>
 </urlset>

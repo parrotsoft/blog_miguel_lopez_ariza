@@ -6,53 +6,7 @@
     <description>Recent content in Laravels on Miguel López Ariza</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-CO</language>
-    <lastBuildDate>Tue, 27 Apr 2021 16:14:58 -0500</lastBuildDate><atom:link href="https://blog.miguellopezariza.com/laravel/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Valida Los Request De Tu Api Rest en Laravel</title>
-      <link>https://blog.miguellopezariza.com/laravel/valida-los-request-de-tu-api-rest-en-laravel/</link>
-      <pubDate>Tue, 27 Apr 2021 16:14:58 -0500</pubDate>
-      
-      <guid>https://blog.miguellopezariza.com/laravel/valida-los-request-de-tu-api-rest-en-laravel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Agrega Autenticacion a Tu Api Rest en Laravel Con Passport</title>
-      <link>https://blog.miguellopezariza.com/laravel/agrega-autenticacion-a-tu-api-rest-en-laravel-con-passport/</link>
-      <pubDate>Tue, 27 Apr 2021 16:13:07 -0500</pubDate>
-      
-      <guid>https://blog.miguellopezariza.com/laravel/agrega-autenticacion-a-tu-api-rest-en-laravel-con-passport/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Estandariza Las Respuestas De Tu Api Rest Con Jsend en Laravel</title>
-      <link>https://blog.miguellopezariza.com/laravel/estandariza-las-respuestas-de-tu-api-rest-con-jsend-en-laravel/</link>
-      <pubDate>Wed, 14 Apr 2021 20:48:09 -0500</pubDate>
-      
-      <guid>https://blog.miguellopezariza.com/laravel/estandariza-las-respuestas-de-tu-api-rest-con-jsend-en-laravel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Crea Tu Primer Api Rest Con Laravel 7</title>
-      <link>https://blog.miguellopezariza.com/laravel/crea-tu-primer-api-rest-con-laravel-7.x/</link>
-      <pubDate>Wed, 14 Apr 2021 20:47:17 -0500</pubDate>
-      
-      <guid>https://blog.miguellopezariza.com/laravel/crea-tu-primer-api-rest-con-laravel-7.x/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Prepara Tu Entorno De Desarrollo Para Laravel en Windows 10</title>
-      <link>https://blog.miguellopezariza.com/laravel/prepara-tu-entorno-de-desarrollo-para-laravel-en-windows-10/</link>
-      <pubDate>Wed, 14 Apr 2021 20:45:23 -0500</pubDate>
-      
-      <guid>https://blog.miguellopezariza.com/laravel/prepara-tu-entorno-de-desarrollo-para-laravel-en-windows-10/</guid>
-      <description>Contar con un entorno de desarrollo bien configurado es fundamental para realizar nuestra labor como programadores de forma eficiente.
-Hoy les mostrare la configuración que yo recomiendo para desarrollar con Laravel en Windows 10.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 22 Mar 2021 20:46:57 -0500</lastBuildDate><atom:link href="https://blog.miguellopezariza.com/laravel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Que Es Un Api Rest</title>
       <link>https://blog.miguellopezariza.com/laravel/que-es-un-api-rest/</link>

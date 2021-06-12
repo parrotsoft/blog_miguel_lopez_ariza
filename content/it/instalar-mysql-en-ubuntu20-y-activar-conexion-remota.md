@@ -2,6 +2,7 @@
 title: "Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota"
 date: 2021-05-19T14:24:58-05:00
 tags: ["ubuntu","mysql","conexion remota","terminal","server","netstat","ufw","root"]
+draft: true
 ---
 
 
