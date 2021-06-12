@@ -7,7 +7,7 @@ tags: ["neovim","vim","windows10"]
 
 !["https://pixabay.com"](/images/monitor-933392_640.jpg "https://pixabay.com/")
 
-**Vim** es uno editor que en la actualidad se menciona mucho en canales de **Youtuber** del area de desarrollo, especialmente en la un Fork llamado **Neovim**, te comparto los pasos para instalar en **Windows 10**.
+**Vim** es uno editor que en la actualidad se menciona mucho en canales de **Youtuber** del area de desarrollo, en especialmente un Fork llamado **Neovim**, te comparto los pasos para instalar en **Windows 10**.
 
 ### Instalar Chocolatey
 > Chocolatey es un Gestor de Paquetes para el Sistema Operativo Windows
