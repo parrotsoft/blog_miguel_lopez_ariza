@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laragons on Miguel López Ariza</title>
+    <link>https://blog.miguellopezariza.com/laragon/</link>
+    <description>Recent content in Laragons on Miguel López Ariza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-CO</language>
+    <lastBuildDate>Wed, 14 Apr 2021 20:46:40 -0500</lastBuildDate><atom:link href="https://blog.miguellopezariza.com/laragon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prinstala Phpmyadmin en Laragon</title>
+      <link>https://blog.miguellopezariza.com/laragon/prinstala-phpmyadmin-en-laragon/</link>
+      <pubDate>Wed, 14 Apr 2021 20:46:40 -0500</pubDate>
+      
+      <guid>https://blog.miguellopezariza.com/laragon/prinstala-phpmyadmin-en-laragon/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

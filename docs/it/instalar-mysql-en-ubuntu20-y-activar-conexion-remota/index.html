@@ -1,0 +1,405 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://blog.miguellopezariza.com/">
+    <meta name="author" content="Miguel López Ariza">
+    <meta name="description" content="Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
+    <meta name="keywords" content="blog,laravel,php,angular,ionic,developer,desarrollador,programador">
+    <meta name="generator" content="Hugo 0.82.0" />
+    <title>
+        
+           
+               Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota &vert; Miguel López Ariza
+           
+        
+    </title>
+    <meta name="description" content="Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota - Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
+    <meta itemprop="name" content="Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota">
+    <meta itemprop="description" content="Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota - Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
+    <meta property="og:title" content="Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota">
+    <meta property="og:description" content="Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota - Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/">
+    <meta property="og:site_name" content="Miguel López Ariza">
+    <meta property="og:type" content="article">
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/" rel="alternate" type="application/rss+xml" title="Miguel López Ariza" />
+    <link href="/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/" rel="feed" type="application/rss+xml" title="Miguel López Ariza" />
+    
+
+    
+    <link rel="canonical" href="https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/">
+    
+
+    <link rel="stylesheet" href="https://blog.miguellopezariza.com/theme.css">
+
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="logo">
+                    
+                        
+                        
+                            
+                        
+                        <img src="https://seccdn.libravatar.org/avatar/d12183e2c61fc986c227b2d30885035b?d=mm&size=200" alt="">
+                    
+
+                    <span class="overlay"><i class="fa fa-home"></i></span>
+                </a>
+            </div>
+            <div class="titles">
+                <h3 class="title">
+                    <a href="/">
+                        Miguel López Ariza
+                    </a>
+                </h3>
+
+                
+                    <span class="subtitle">Hola, te compartiré un poco de mi experiencia como programador!</span>
+                
+            </div>
+
+            
+
+            
+                <div class="toggler">
+            
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+    </header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/">
+            Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-05-19</span>
+            
+        
+
+        
+
+        
+
+        
+    </div>
+
+    
+        
+
+        <p><img src="/images/mouse-379978_640.jpg" alt="https://pixabay.com" title="https://pixabay.com/"></p>
+<p>En mi labor como desarrollador de Software me enfrento a situaciones en las que por algún motivo debo configurar entornos para desplegar aplicaciones y servicios del entorno de desarrollo.</p>
+<p>Esta labor normalmente la realizo en Windows sin mayor esfuerzo, pero cuando el SO es Ubuntu la cosa cambia un poco y tengo leer documentación en varias fuentes, por tal motivo detallo cada uno de los pasos que realizo para configurar MySQL con acceso remoto en un servidor con Ubuntu 20 desplegado en DigitalOcean.</p>
+<h3 id="instalación-de-mysql">INSTALACIÓN DE MYSQL</h3>
+<p>Con el siguiente comando conseguimos que Ubuntu actualice todos los repositorios actuales de paquete, es una operación recomendada antes de instalar un nuevo software.</p>
+<pre><code class="language-console" data-lang="console">sudo apt-get update
+</code></pre><p>Continuamos con la instalación del MySQL, para lo cual ejecutamos el siguiente comando:</p>
+<pre><code class="language-console" data-lang="console">sudo apt-get install mysql-server
+</code></pre><p>Una vez finaliza la instalación verificamos que el servicio de MySQL se este ejecutando de forma correcta con la siguiente instrucción:</p>
+<pre><code class="language-console" data-lang="console">systemctl status mysql
+</code></pre><p><img src="/images/mysql_ubuntu/systemctl_status_mysql.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
+<h3 id="configurando-mysql-para-permitir-conexiones-remotas">CONFIGURANDO MYSQL PARA PERMITIR CONEXIONES REMOTAS</h3>
+<p>En esta etapa del procesos, el primero comando a ejecutar nos permitirá cargar un asistente para  modificar configuraciones por defecto que trae MySQL:</p>
+<pre><code class="language-console" data-lang="console">mysql_secure_installation
+</code></pre><ol>
+<li>
+<p>Pregunta:  Respuesta: <strong>N</strong>
+<img src="/images/mysql_ubuntu/mysql_secure_installation_1.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
+</li>
+<li>
+<p>Pregunta:  Digitamos una clave para nuestro servicio de MySQL.
+<img src="/images/mysql_ubuntu/mysql_secure_installation_2.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
+</li>
+<li>
+<p>Pregunta:  Respuesta <strong>y</strong>.
+<img src="/images/mysql_ubuntu/mysql_secure_installation_3.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
+</li>
+<li>
+<p>Pregunta:  Respuesta <strong>y</strong>.
+<img src="/images/mysql_ubuntu/mysql_secure_installation_4.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
+</li>
+<li>
+<p>Pregunta:  Respuesta <strong>y</strong>.
+<img src="/images/mysql_ubuntu/mysql_secure_installation_5.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
+</li>
+<li>
+<p>Pregunta:  Respuesta <strong>y</strong>.
+<img src="/images/mysql_ubuntu/mysql_secure_installation_6.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
+</li>
+</ol>
+<p>Ahora utilizando el editor de texto <strong>nano</strong> abriremos el archivo mysqld.cnf para realizar la modificación pertinente.</p>
+<pre><code class="language-console" data-lang="console"> sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+</code></pre><p>Una vez cargado el archivo buscamos el parámetro <strong>bind-address</strong> que por defecto tiene como valor <strong>127.0.0.1</strong> y cambiamos por <strong>0.0.0.0</strong>.</p>
+<pre><code class="language-console" data-lang="console"> bind-address = 0.0.0.0
+</code></pre><p>Luego,  presionamos la combinación de teclas <strong>Ctrl+x</strong> y por ultimo la tecla <strong>Y</strong> para confirmar el cambio sobre el archivo mysqld.cnf.
+Con lo anterior permitiremos conexiones remotas a MySQL desde cualquier IP.</p>
+<p>Continuamos ejecutando el siguiente comando que nos permitirá reiniciar el servicio de MySQL para aplicar los cambios en la configuración.</p>
+<pre><code class="language-console" data-lang="console"> sudo systemctl restart mysql
+</code></pre><p>Continuamos con la instalación de la herramienta <strong>net-tools</strong> esta nos permitirá verificar que la conexión remota a MySQL esta bien configurada.</p>
+<ul>
+<li>Instalamos net-tools</li>
+</ul>
+<pre><code class="language-console" data-lang="console">apt-get install net-tools
+</code></pre><ul>
+<li>Verificamos que las conexiones externas esten permitidas al servicio MySQL desde el puerto <strong>3306</strong></li>
+</ul>
+<pre><code class="language-console" data-lang="console">sudo netstat -plunt | grep mysqld
+</code></pre><ul>
+<li>Ahora crearemos con el siguiente comando un excepción en el <strong>Firewall</strong> de Ubuntu para el servicio MySQL.</li>
+</ul>
+<pre><code class="language-console" data-lang="console">sudo ufw allow mysql
+</code></pre><h3 id="conexión-remota-para-el-usuario-root">CONEXIÓN REMOTA PARA EL USUARIO ROOT</h3>
+<pre><code class="language-console" data-lang="console">sudo mysql
+</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#66d9ef">IDENTIFIED</span> <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;Mla1043605421&#39;</span>;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> <span style="color:#f92672">*</span>.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#66d9ef">WITH</span> <span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">OPTION</span>;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#66d9ef">IDENTIFIED</span> <span style="color:#66d9ef">WITH</span> mysql_native_password <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;Mla1043605421&#39;</span>;
+</code></pre></div>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.miguellopezariza.com/tags/ubuntu/">ubuntu</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.miguellopezariza.com/tags/mysql/">mysql</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.miguellopezariza.com/tags/conexion-remota/">conexion remota</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.miguellopezariza.com/tags/terminal/">terminal</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.miguellopezariza.com/tags/server/">server</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.miguellopezariza.com/tags/netstat/">netstat</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.miguellopezariza.com/tags/ufw/">ufw</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.miguellopezariza.com/tags/root/">root</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://blog.miguellopezariza.com/it/instalar-neovim-y-plugins-en-windows-10/">Instalar Neovim Y Plugins en Windows 10</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/">Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.miguellopezariza.com/laravel/valida-los-request-de-tu-api-rest-en-laravel/">Valida Los Request De Tu Api Rest en Laravel</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.miguellopezariza.com/laravel/agrega-autenticacion-a-tu-api-rest-en-laravel-con-passport/">Agrega Autenticacion a Tu Api Rest en Laravel Con Passport</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.miguellopezariza.com/laravel/estandariza-las-respuestas-de-tu-api-rest-con-jsend-en-laravel/">Estandariza Las Respuestas De Tu Api Rest Con Jsend en Laravel</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.miguellopezariza.com/laravel/crea-tu-primer-api-rest-con-laravel-7.x/">Crea Tu Primer Api Rest Con Laravel 7</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.miguellopezariza.com/laragon/prinstala-phpmyadmin-en-laragon/">Prinstala Phpmyadmin en Laragon</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/laravel">Laravel
+                        (1)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/parrotsoft" target="_blank"><i class="fab fa-github"></i></a>
+                
+                <a href="https://www.linkedin.com/in/mlopezariza" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                
+                <a href="https://twitter.com/miguelopeza" target="_blank"><i class="fab fa-twitter"></i></a>
+                
+                <a href="https://www.youtube.com/channel/UCoaqC95Z7XQBerrFTYf3Rbg" target="_blank"><i class="fab fa-youtube"></i></a>
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/parrotsoft" target="_blank">
+                &copy;
+                
+                2021
+                
+                by Miguel Lopez Ariza
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/parrotsoft/blog_miguel_lopez_ariza"
+                target="_blank">Miguel Lopez Ariza</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-K6K1XVE8DN', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://blog.miguellopezariza.com/theme.js"></script>
+
+    
+
+    
+</body>
+
+</html>

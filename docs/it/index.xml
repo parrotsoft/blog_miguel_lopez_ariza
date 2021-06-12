@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Its on Miguel López Ariza</title>
+    <link>https://blog.miguellopezariza.com/it/</link>
+    <description>Recent content in Its on Miguel López Ariza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-CO</language>
+    <lastBuildDate>Sat, 12 Jun 2021 15:17:59 -0500</lastBuildDate><atom:link href="https://blog.miguellopezariza.com/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalar Neovim Y Plugins en Windows 10</title>
+      <link>https://blog.miguellopezariza.com/it/instalar-neovim-y-plugins-en-windows-10/</link>
+      <pubDate>Sat, 12 Jun 2021 15:17:59 -0500</pubDate>
+      
+      <guid>https://blog.miguellopezariza.com/it/instalar-neovim-y-plugins-en-windows-10/</guid>
+      <description>Vim es uno editor que en la actualidad se menciona mucho en canales de Youtuber del area de desarrollo, especialmente en la un Fork llamado Neovim, te comparto los pasos para instalar en Windows 10.
+Instalar Chocolatey  Chocolatey es un Gestor de Paquetes para el Sistema Operativo Windows
+   Ejecutamos PowerShell como administrador
+  Ejecutamos el siguiente comando para instalar Chocolatey, este un manejador de paquetes para Windows.</description>
+    </item>
+    
+    <item>
+      <title>Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota</title>
+      <link>https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/</link>
+      <pubDate>Wed, 19 May 2021 14:24:58 -0500</pubDate>
+      
+      <guid>https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/</guid>
+      <description>En mi labor como desarrollador de Software me enfrento a situaciones en las que por algún motivo debo configurar entornos para desplegar aplicaciones y servicios del entorno de desarrollo.
+Esta labor normalmente la realizo en Windows sin mayor esfuerzo, pero cuando el SO es Ubuntu la cosa cambia un poco y tengo leer documentación en varias fuentes, por tal motivo detallo cada uno de los pasos que realizo para configurar MySQL con acceso remoto en un servidor con Ubuntu 20 desplegado en DigitalOcean.</description>
+    </item>
+    
+  </channel>
+</rss>

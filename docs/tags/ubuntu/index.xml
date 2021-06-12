@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on Miguel López Ariza</title>
+    <link>https://blog.miguellopezariza.com/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on Miguel López Ariza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-CO</language>
+    <lastBuildDate>Wed, 19 May 2021 14:24:58 -0500</lastBuildDate><atom:link href="https://blog.miguellopezariza.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalar MySQL en Ubuntu 20 Y Activar Conexión Remota</title>
+      <link>https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/</link>
+      <pubDate>Wed, 19 May 2021 14:24:58 -0500</pubDate>
+      
+      <guid>https://blog.miguellopezariza.com/it/instalar-mysql-en-ubuntu20-y-activar-conexion-remota/</guid>
+      <description>En mi labor como desarrollador de Software me enfrento a situaciones en las que por algún motivo debo configurar entornos para desplegar aplicaciones y servicios del entorno de desarrollo.
+Esta labor normalmente la realizo en Windows sin mayor esfuerzo, pero cuando el SO es Ubuntu la cosa cambia un poco y tengo leer documentación en varias fuentes, por tal motivo detallo cada uno de los pasos que realizo para configurar MySQL con acceso remoto en un servidor con Ubuntu 20 desplegado en DigitalOcean.</description>
+    </item>
+    
+  </channel>
+</rss>

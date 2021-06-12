@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on Miguel López Ariza</title>
+    <link>https://blog.miguellopezariza.com/tags/vim/</link>
+    <description>Recent content in vim on Miguel López Ariza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-CO</language>
+    <lastBuildDate>Sat, 12 Jun 2021 15:17:59 -0500</lastBuildDate><atom:link href="https://blog.miguellopezariza.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalar Neovim Y Plugins en Windows 10</title>
+      <link>https://blog.miguellopezariza.com/it/instalar-neovim-y-plugins-en-windows-10/</link>
+      <pubDate>Sat, 12 Jun 2021 15:17:59 -0500</pubDate>
+      
+      <guid>https://blog.miguellopezariza.com/it/instalar-neovim-y-plugins-en-windows-10/</guid>
+      <description>Vim es uno editor que en la actualidad se menciona mucho en canales de Youtuber del area de desarrollo, especialmente en la un Fork llamado Neovim, te comparto los pasos para instalar en Windows 10.
+Instalar Chocolatey  Chocolatey es un Gestor de Paquetes para el Sistema Operativo Windows
+   Ejecutamos PowerShell como administrador
+  Ejecutamos el siguiente comando para instalar Chocolatey, este un manejador de paquetes para Windows.</description>
+    </item>
+    
+  </channel>
+</rss>
