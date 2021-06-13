@@ -6,7 +6,7 @@ publishDir = "docs"
 
 enableRobotsTXT = true
 
-disqusShortname="https://www.facebook.com/app_scoped_user_id/YXNpZADpBWEhNdkJ1eFNyQkZApNm1jbzlSWkRNLVJlalo0eDN6LVYyWmpSMHpTdm5PcW1JN2t0Tm5PNmNhblhtTXk4TTJXWlNhS2g5VlN5TXh6TkJNVlJDU2UxdEJ5NWFTbHdlenN3SUkZD/"
+disqusShortname="miguellopezariza"
 
 [params]
    googleAnalyticsID = "G-K6K1XVE8DN"
