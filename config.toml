@@ -6,7 +6,7 @@ publishDir = "docs"
 
 enableRobotsTXT = true
 
-disqusShortname="miguellopezariza"
+disqusShortname="blog-miguellopezariza"
 
 [params]
    googleAnalyticsID = "G-K6K1XVE8DN"
