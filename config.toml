@@ -3,27 +3,29 @@ languageCode = "es-CO"
 title = "Miguel López Ariza"
 theme = "bilberry-hugo-theme"
 publishDir = "docs"
+DefaultContentLanguage = "es"
 
 enableRobotsTXT = true
 disqusShortname="blog.miguellopezariza.com"
 
-algolia_search    = true
-algolia_appId     = "I7WDR47S3K"
-algolia_apiKey    = "41a21ce5e1edd6a9b6fc160d3ca45fb8"
-algolia_indexName = "blog.miguellopezariza.com"
-algolia_currentLanguageOnly = true
 
 [params]
+   algolia_search    = true
+   algolia_appId     = "I7WDR47S3K"
+   algolia_apiKey    = "41a21ce5e1edd6a9b6fc160d3ca45fb8"
+   algolia_indexName = "blog.miguellopezariza.com"
+   algolia_currentLanguageOnly = false
+
    googleAnalyticsID = "G-K6K1XVE8DN"
    author = "Miguel López Ariza"
    description = "Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor"
-  keywords = "blog,laravel,php,angular,ionic,developer,desarrollador,programador"
+   keywords = "blog,laravel,php,angular,ionic,developer,desarrollador,programador"
 
    avatarEmail = "lopezarizamiguel@gmail.com"
    subtitle = "Hola, te compartiré un poco de mi experiencia como programador!"
 
    showSocialMedia = true
-
+  
    socialMediaLinks = [
       { link = "https://github.com/parrotsoft", icon = "fab fa-github" },
       { link = "https://www.linkedin.com/in/mlopezariza", icon = "fab fa-linkedin-in" },
@@ -37,3 +39,10 @@ algolia_currentLanguageOnly = true
     copyrightUrl = "https://github.com/parrotsoft"
     creditsText = "Miguel Lopez Ariza"
     creditsUrl = "https://github.com/parrotsoft/blog_miguel_lopez_ariza"
+
+    enableMomentJs = true
+    
+
+[outputs]
+  home = [ "HTML", "JSON", "RSS" ]
+  page = [ "HTML" ]

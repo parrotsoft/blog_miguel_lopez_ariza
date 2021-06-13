@@ -1,7 +1,7 @@
 
   
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -77,6 +77,11 @@
             
         </ul>
 
+        
+            <div id="search-box" class="search">
+                <i class="fas fa-search"></i>
+                <input id="search" type="text" placeholder="Buscar ...">
+            </div>
         
     </div>
 </nav>
@@ -281,7 +286,7 @@ dentro de este definiremos los plugins y configuración de los mismos, incluso e
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "blog-miguellopezariza" + '.disqus.com/embed.js';
+        s.src = '//' + "blog.miguellopezariza.com" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
@@ -301,7 +306,7 @@ dentro de este definiremos los plugins y configuración de los mismos, incluso e
 
         
         <div class="recent-posts">
-            <strong>Latest posts</strong>
+            <strong>Últimas publicaciones</strong>
             <ul>
                 
                 
@@ -326,7 +331,7 @@ dentro de este definiremos los plugins y configuración de los mismos, incluso e
         <div class="right">
             
             <div class="external-profiles">
-                <strong>Social media</strong>
+                <strong>Redes sociales</strong>
 
                 
                 <a href="https://github.com/parrotsoft" target="_blank"><i class="fab fa-github"></i></a>
@@ -374,6 +379,16 @@ dentro de este definiremos los plugins y configuración de los mismos, incluso e
     <script type="text/javascript" src="https://blog.miguellopezariza.com/theme.js"></script>
 
     
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="I7WDR47S3K">
+  <input type="hidden" id="algolia-search-apiKey" value="41a21ce5e1edd6a9b6fc160d3ca45fb8">
+  <input type="hidden" id="algolia-search-indexName" value="blog.miguellopezariza.com">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nada encontrado.">
+
+  
+</div>
 
     
 </body>
