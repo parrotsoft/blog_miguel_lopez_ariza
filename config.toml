@@ -5,7 +5,7 @@ theme = "bilberry-hugo-theme"
 publishDir = "docs"
 
 enableRobotsTXT = true
-disqusShortname="blog-miguellopezariza"
+disqusShortname="blog.miguellopezariza.com"
 
 algolia_search    = true
 algolia_appId     = "I7WDR47S3K"
