@@ -7,6 +7,12 @@ publishDir = "docs"
 enableRobotsTXT = true
 disqusShortname="blog-miguellopezariza"
 
+algolia_search    = true
+algolia_appId     = "I7WDR47S3K"
+algolia_apiKey    = "41a21ce5e1edd6a9b6fc160d3ca45fb8"
+algolia_indexName = "blog.miguellopezariza.com"
+algolia_currentLanguageOnly = true
+
 [params]
    googleAnalyticsID = "G-K6K1XVE8DN"
    author = "Miguel López Ariza"
