@@ -49,6 +49,10 @@
 <html class="no-js" lang="{{ .Site.Language.Lang }}">
 
 <head>
+    {{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
+        {{ partial "analytics-gtag.html" . }}
+    {{ end }}
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="{{ .Site.BaseURL }}">
@@ -102,10 +106,6 @@
         {{ range .Site.Params.css_modules }}
             <link rel="stylesheet" href="{{ . | absURL }}">
         {{ end }}
-    {{ end }}
-
-    {{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
-        {{ partial "analytics-gtag.html" . }}
     {{ end }}
 
 </head>
