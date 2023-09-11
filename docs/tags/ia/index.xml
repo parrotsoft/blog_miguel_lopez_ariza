@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IA on Miguel López Ariza</title>
+    <link>https://blog.miguellopezariza.com/tags/ia/</link>
+    <description>Recent content in IA on Miguel López Ariza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-CO</language>
+    <lastBuildDate>Sun, 10 Sep 2023 18:45:12 -0500</lastBuildDate><atom:link href="https://blog.miguellopezariza.com/tags/ia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cinco Alternativas a Github Copilot</title>
+      <link>https://blog.miguellopezariza.com/ia/cinco-alternativas-a-github-copilot/</link>
+      <pubDate>Sun, 10 Sep 2023 18:45:12 -0500</pubDate>
+      
+      <guid>https://blog.miguellopezariza.com/ia/cinco-alternativas-a-github-copilot/</guid>
+      <description>GitHub Copilot, creado por Microsoft, es una herramienta de colaboración IA que mejora la codificación al ofrecer sugerencias contextuales y de autocompletado. Aunque es destacado, existen otras alternativas que presentaremos a continuación.
+Codeium Codeium es una herramienta de asistencia para programadores que utiliza IA para ofrecer sugerencias de código y correcciones en tiempo real. Mejora la eficiencia de la codificación, ayuda a encontrar errores y ofrece recomendaciones de estilo para un código más limpio.</description>
+    </item>
+    
+  </channel>
+</rss>

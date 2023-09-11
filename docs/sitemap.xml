@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.miguellopezariza.com/ia/cinco-alternativas-a-github-copilot/</loc>
+    <lastmod>2023-09-10T18:45:12-05:00</lastmod>
+  </url><url>
+    <loc>https://blog.miguellopezariza.com/tags/coding/</loc>
+    <lastmod>2023-09-10T18:45:12-05:00</lastmod>
+  </url><url>
+    <loc>https://blog.miguellopezariza.com/tags/copilot/</loc>
+    <lastmod>2023-09-10T18:45:12-05:00</lastmod>
+  </url><url>
+    <loc>https://blog.miguellopezariza.com/tags/guthub/</loc>
+    <lastmod>2023-09-10T18:45:12-05:00</lastmod>
+  </url><url>
+    <loc>https://blog.miguellopezariza.com/tags/ia/</loc>
+    <lastmod>2023-09-10T18:45:12-05:00</lastmod>
+  </url><url>
+    <loc>https://blog.miguellopezariza.com/ia/</loc>
+    <lastmod>2023-09-10T18:45:12-05:00</lastmod>
+  </url><url>
+    <loc>https://blog.miguellopezariza.com/</loc>
+    <lastmod>2023-09-10T18:45:12-05:00</lastmod>
+  </url><url>
+    <loc>https://blog.miguellopezariza.com/tags/</loc>
+    <lastmod>2023-09-10T18:45:12-05:00</lastmod>
+  </url><url>
     <loc>https://blog.miguellopezariza.com/it/instalar-neovim-y-plugins-en-windows-10/</loc>
     <lastmod>2021-06-12T15:17:59-05:00</lastmod>
   </url><url>
     <loc>https://blog.miguellopezariza.com/it/</loc>
     <lastmod>2021-06-12T15:17:59-05:00</lastmod>
   </url><url>
-    <loc>https://blog.miguellopezariza.com/</loc>
-    <lastmod>2021-06-12T15:17:59-05:00</lastmod>
-  </url><url>
     <loc>https://blog.miguellopezariza.com/tags/neovim/</loc>
-    <lastmod>2021-06-12T15:17:59-05:00</lastmod>
-  </url><url>
-    <loc>https://blog.miguellopezariza.com/tags/</loc>
     <lastmod>2021-06-12T15:17:59-05:00</lastmod>
   </url><url>
     <loc>https://blog.miguellopezariza.com/tags/vim/</loc>
