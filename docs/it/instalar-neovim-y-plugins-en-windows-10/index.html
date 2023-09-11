@@ -22,7 +22,7 @@
     <meta name="author" content="Miguel López Ariza">
     <meta name="description" content="Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
     <meta name="keywords" content="blog,laravel,php,angular,ionic,developer,desarrollador,programador">
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <title>
         
            
@@ -174,15 +174,15 @@
 </li>
 <li>
 <p>Ejecutamos el siguiente comando para instalar Chocolatey, este un manejador de paquetes para Windows.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Set-ExecutionPolicy Bypass -Scope <span style="color:#66d9ef">Process</span> -Force; <span style="color:#66d9ef">[System.Net.ServicePointManager]</span>::SecurityProtocol = <span style="color:#66d9ef">[System.Net.ServicePointManager]</span>::SecurityProtocol <span style="color:#f92672">-bor</span> 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span style="color:#e6db74">&#39;https://chocolatey.org/install.ps1&#39;</span>))
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-ExecutionPolicy Bypass -Scope <span style="color:#66d9ef">Process</span> -Force; [<span style="color:#66d9ef">System.Net.ServicePointManager</span>]::SecurityProtocol = [<span style="color:#66d9ef">System.Net.ServicePointManager</span>]::SecurityProtocol <span style="color:#f92672">-bor</span> <span style="color:#ae81ff">3072</span>; iex ((New-Object System.Net.WebClient).DownloadString(<span style="color:#e6db74">&#39;https://chocolatey.org/install.ps1&#39;</span>))
+</span></span></code></pre></div></li>
 </ul>
 <h3 id="instalar-neovim">Instalar Neovim</h3>
 <ul>
 <li>
 <p>Ejecutamos el siguiente comando:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">choco install neovim
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>choco install neovim
+</span></span></code></pre></div></li>
 </ul>
 <h3 id="instalar-vim-plug">Instalar Vim-Plug</h3>
 <blockquote>
@@ -191,19 +191,19 @@
 <ul>
 <li>
 <p>Creamos una carpeta para almacenar la configuracion y plugins y descargamos del repositorio de github</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">md ~\AppData\Local\nvim\autoload
-$uri = <span style="color:#e6db74">&#39;https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&#39;</span>
-(New-Object Net.WebClient).DownloadFile(
-    $uri,
-    $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(<span style="color:#e6db74">&#34;~\AppData\Local\nvim\autoload\plug.vim&#34;</span>)
-)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>md ~\AppData\Local\nvim\autoload
+</span></span><span style="display:flex;"><span>$uri = <span style="color:#e6db74">&#39;https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&#39;</span>
+</span></span><span style="display:flex;"><span>(New-Object Net.WebClient).DownloadFile(
+</span></span><span style="display:flex;"><span>    $uri,
+</span></span><span style="display:flex;"><span>    $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(<span style="color:#e6db74">&#34;~\AppData\Local\nvim\autoload\plug.vim&#34;</span>)
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div></li>
 </ul>
 <h3 id="configurar-vim-plug">Configurar Vim-plug</h3>
 <ul>
 <li>
 <p>Entramos a la carpeta:</p>
-<pre><code>~\AppData\Local\nvim\
+<pre tabindex="0"><code>~\AppData\Local\nvim\
 </code></pre></li>
 <li>
 <p>Creamos el archivo <strong>init.vim</strong>
@@ -211,23 +211,22 @@ dentro de este definiremos los plugins y configuración de los mismos, incluso e
 </li>
 </ul>
 <p>El contenido de <strong>init.vim</strong> debe ser la siguiente:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">
-</span><span style="color:#75715e">    &#34;Este es el inicio del bloque de Plugins</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">begin</span>()<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">
-</span><span style="color:#75715e">        &#34;En este punto se deben definir los plugin que se desean instalar, ejemplo:</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>        <span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>        <span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;preservim/nerdtree&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">end</span>()<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">    &#34;Este es el fin del bloque de Plugins</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">
-</span><span style="color:#75715e">    &#34;En la parte final del archivo se agregan configuración requeridas por los plugins, ejemplo:</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">autocmd</span> <span style="color:#a6e22e">VimEnter</span> * <span style="color:#a6e22e">NERDTree</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>El paso siguiente es ejecutar la instalación de los plugin, para lo cual salimos del modo editor presionando la tecla <strong>Esc</strong>, escribimos <strong>:wq</strong> para guardar y salir.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;Este es el inicio del bloque de Plugins</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">begin</span>()<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">        &#34;En este punto se deben definir los plugin que se desean instalar, ejemplo:</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        <span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        <span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;preservim/nerdtree&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">end</span>()<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">    &#34;Este es el fin del bloque de Plugins</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;En la parte final del archivo se agregan configuración requeridas por los plugins, ejemplo:</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">autocmd</span> <span style="color:#a6e22e">VimEnter</span> * <span style="color:#a6e22e">NERDTree</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>El paso siguiente es ejecutar la instalación de los plugin, para lo cual salimos del modo editor presionando la tecla <strong>Esc</strong>, escribimos <strong>:wq</strong> para guardar y salir.</p>
 <p>Luego ejecutamos <strong>:PlugInstall</strong> con este se iniciara la instalación de los plugins.</p>
 <p>En este punto ya estamos listos para iniciar el proceso de aprendizaje y configuración de Neovim.</p>
 <p>Espero sea de mucha utilidad.</p>
@@ -275,7 +274,7 @@ dentro de este definiremos los plugins y configuración de los mismos, incluso e
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -357,7 +356,7 @@ dentro de este definiremos los plugins y configuración de los mismos, incluso e
             <a href="https://github.com/parrotsoft" target="_blank">
                 &copy;
                 
-                2021
+                2023
                 
                 by Miguel Lopez Ariza
             </a>

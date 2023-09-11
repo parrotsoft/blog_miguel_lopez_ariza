@@ -22,7 +22,7 @@
     <meta name="author" content="Miguel López Ariza">
     <meta name="description" content="Blog dedicado a tocar temas relacionados con la programación y mi labor diaria como trabajador, estudiante y profesor">
     <meta name="keywords" content="blog,laravel,php,angular,ionic,developer,desarrollador,programador">
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.118.2">
     <title>
         
            
@@ -168,20 +168,20 @@
 <ol>
 <li>Actualizamos los repositorios de Ubuntu:</li>
 </ol>
-<pre><code class="language-console" data-lang="console">sudo apt-get update
-</code></pre><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>sudo apt-get update
+</span></span></code></pre></div><ol start="2">
 <li>Instalamos <strong>MySQL</strong>:</li>
 </ol>
-<pre><code class="language-console" data-lang="console">sudo apt-get install mysql-server
-</code></pre><ol start="3">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>sudo apt-get install mysql-server
+</span></span></code></pre></div><ol start="3">
 <li>Verificamos que el servicio de MySQL este corriendo:</li>
 </ol>
-<pre><code class="language-console" data-lang="console">systemctl status mysql
-</code></pre><p><img src="/images/mysql_ubuntu/systemctl_status_mysql.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>systemctl status mysql
+</span></span></code></pre></div><p><img src="/images/mysql_ubuntu/systemctl_status_mysql.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
 <h3 id="configurar-mysql-para-permitir-conexiones-remotas">Configurar MySQL para permitir conexiones remotas</h3>
 <p>Cargamos el asistente que nos permitirá modificar configuraciones por defecto que trae MySQL:</p>
-<pre><code class="language-console" data-lang="console">mysql_secure_installation
-</code></pre><ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>mysql_secure_installation
+</span></span></code></pre></div><ol>
 <li>Pregunta:  Respuesta: <strong>N</strong></li>
 </ol>
 <p><img src="/images/mysql_ubuntu/mysql_secure_installation_1.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
@@ -206,34 +206,34 @@
 </ol>
 <p><img src="/images/mysql_ubuntu/mysql_secure_installation_6.png" alt="&ldquo;systemctl status mysql&rdquo;" title="systemctl status mysql"></p>
 <p>Ahora utilizando el editor de texto <strong>nano</strong> abriremos el archivo <strong>mysqld.cnf</strong> para realizar la modificación pertinente.</p>
-<pre><code class="language-console" data-lang="console"> sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-</code></pre><p>Buscamos el parámetro <strong>bind-address</strong> que por defecto tiene como valor <strong>127.0.0.1</strong> y cambiamos por <strong>0.0.0.0</strong>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"> <span style="color:#a6e22e">bind</span>-<span style="color:#a6e22e">address</span> = <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>Presionamos <strong>Ctrl+x</strong> y por ultimo la tecla <strong>Y</strong> para confirmar el cambio sobre el archivo <strong>mysqld.cnf</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span> sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+</span></span></code></pre></div><p>Buscamos el parámetro <strong>bind-address</strong> que por defecto tiene como valor <strong>127.0.0.1</strong> y cambiamos por <strong>0.0.0.0</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span> <span style="color:#a6e22e">bind</span>-<span style="color:#a6e22e">address</span> = <span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Presionamos <strong>Ctrl+x</strong> y por ultimo la tecla <strong>Y</strong> para confirmar el cambio sobre el archivo <strong>mysqld.cnf</strong>.</p>
 <blockquote>
 <p>Con lo anterior permitiremos conexiones remotas a MySQL desde cualquier IP.</p>
 </blockquote>
 <p>Reiniciamos el servicio de <strong>MySQL</strong> para aplicar los cambios.</p>
-<pre><code class="language-console" data-lang="console"> sudo systemctl restart mysql
-</code></pre><p>Continuamos con la instalación de la herramienta <strong>net-tools</strong> esta nos permitirá verificar que la conexión remota a MySQL esta bien configurada.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span> sudo systemctl restart mysql
+</span></span></code></pre></div><p>Continuamos con la instalación de la herramienta <strong>net-tools</strong> esta nos permitirá verificar que la conexión remota a MySQL esta bien configurada.</p>
 <ul>
 <li>Instalamos net-tools</li>
 </ul>
-<pre><code class="language-console" data-lang="console">apt-get install net-tools
-</code></pre><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>apt-get install net-tools
+</span></span></code></pre></div><ul>
 <li>Verificamos que las conexiones externas estén permitidas al servicio MySQL desde el puerto <strong>3306</strong></li>
 </ul>
-<pre><code class="language-console" data-lang="console">sudo netstat -plunt | grep mysqld
-</code></pre><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>sudo netstat -plunt | grep mysqld
+</span></span></code></pre></div><ul>
 <li>Ahora crearemos una excepción en el <strong>Firewall</strong> de Ubuntu para el servicio MySQL.</li>
 </ul>
-<pre><code class="language-console" data-lang="console">sudo ufw allow mysql
-</code></pre><h3 id="conexión-remota-para-el-usuario-root">Conexión remota para el usuario root</h3>
-<pre><code class="language-console" data-lang="console">sudo mysql
-</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;tu_clave&#39;</span>;
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> <span style="color:#f92672">*</span>.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#66d9ef">WITH</span> <span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">OPTION</span>;
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> IDENTIFIED <span style="color:#66d9ef">WITH</span> mysql_native_password <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;tu_clave&#39;</span>;
-</code></pre></div><p>Luego se seguir los pasos anteriores ya deberías poder acceder a tu servicio MySQL desde cualquier maquina utilizando un cliente como Navicat o HeidiSql.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>sudo ufw allow mysql
+</span></span></code></pre></div><h3 id="conexión-remota-para-el-usuario-root">Conexión remota para el usuario root</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>sudo mysql
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;tu_clave&#39;</span>;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> <span style="color:#f92672">*</span>.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#66d9ef">WITH</span> <span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">OPTION</span>;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">USER</span> <span style="color:#e6db74">&#39;root&#39;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#39;%&#39;</span> IDENTIFIED <span style="color:#66d9ef">WITH</span> mysql_native_password <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#39;tu_clave&#39;</span>;
+</span></span></code></pre></div><p>Luego se seguir los pasos anteriores ya deberías poder acceder a tu servicio MySQL desde cualquier maquina utilizando un cliente como Navicat o HeidiSql.</p>
 <p>Espero sea de mucha utilidad.</p>
 
     
@@ -304,7 +304,7 @@
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -386,7 +386,7 @@
             <a href="https://github.com/parrotsoft" target="_blank">
                 &copy;
                 
-                2021
+                2023
                 
                 by Miguel Lopez Ariza
             </a>
